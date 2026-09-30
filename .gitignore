@@ -9,9 +9,3 @@ wandb/
 # Python
 __pycache__/
 *.pyc
-
-# Datasets e Modelos (opcional, mas recomendado)
-*.csv
-*.parquet
-*.pkl
-*.h5
