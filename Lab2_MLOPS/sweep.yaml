@@ -1,0 +1,21 @@
+method: bayes   # escolha grid, random ou bayes
+                # e justifique a escolha no seu Report
+metric:
+  name: cv_r2_mean
+  goal: maximize
+parameters:
+  n_estimators:
+    values: [50, 100, 200, 400]
+  max_depth:
+    values: [3, 5, 10, 20, null]
+  min_samples_split:
+    values: [2, 5, 10]
+  min_samples_leaf:
+    values: [1, 2, 4]
+  max_features:
+    values: ["sqrt", "log2", null]
+program: src/train.py
+command:
+  - C:\Users\clari\MLOps\Lab2_MLOPS\wandb-env\Scripts\python.exe
+  - ${program}
+  - ${args}
